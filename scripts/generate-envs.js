@@ -21,7 +21,7 @@ environments.forEach(env => {
 });
 
 const exampleLines = Array.from(allKeys).map((key) => {
-  if (/_KEY$|_PASSWORD$/i.test(key)) {
+  if (/_KEY$|_PASSWORD$|_SECRET$/i.test(key)) {
     return `${key}="ChangeThisSecretKey!"`;
   }
   return `${key}=`;
