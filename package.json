@@ -1,0 +1,12 @@
+{
+  "name": "envtool",
+  "version": "1.0.0",
+  "description": "CLI Tool zum Verwalten von .env-Dateien über eine zentrale Konfiguration.",
+  "main": "bin/envtool.js",
+  "bin": {
+    "envtool": "./bin/envtool.js"
+  },
+  "scripts": {},
+  "author": "Dein Name",
+  "license": "MIT"
+}
