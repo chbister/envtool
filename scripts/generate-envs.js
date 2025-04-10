@@ -35,7 +35,7 @@ Object.keys(config).forEach((envKey) => {
 });
 
 const exampleLines = Object.entries(mergedVars).map(([key, value]) => {
-  if (/_KEY$|_PASSWORD$|_SECRET$/i.test(key)) {
+  if (/_KEY$|_PASSWORD$|_SECRET$|_TOKEN$/i.test(key)) {
     return `${key}="ChangeThisSecretKey!"`;
   }
   return `${key}="${value}"`;
