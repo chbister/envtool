@@ -8,15 +8,15 @@ const allKeys = new Set();
 
 function formatEnv(vars) {
   return Object.entries(vars)
-    .map(([key, val]) => `${key}="\${val}"`)
-    .join('\n');
+      .map(([key, val]) => `${key}="${val}"`)
+      .join('\n');
 }
 
 environments.forEach(env => {
   const merged = { ...globalVars, ...config[env] };
   const output = formatEnv(merged);
-  fs.writeFileSync(`.env.\${env}`, output);
-  console.log(`✅ .env.\${env} generiert`);
+  fs.writeFileSync(`.env.${env}`, output);
+  console.log(`✅ .env.${env} generiert`);
   Object.keys(merged).forEach(k => allKeys.add(k));
 });
 
