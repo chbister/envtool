@@ -1,0 +1,15 @@
+# JetBrains
+.idea/
+
+# Node.js
+node_modules/
+.env
+.env.*
+.env-config.json
+
+# Sonstige
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dist/
+.DS_Store

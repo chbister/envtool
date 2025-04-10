@@ -7,6 +7,6 @@
     "envtool": "./bin/envtool.js"
   },
   "scripts": {},
-  "author": "Dein Name",
+  "author": "Christian Bister",
   "license": "MIT"
 }
